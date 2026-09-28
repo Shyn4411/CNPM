@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" fill="none">
+  <defs>
+    <linearGradient id="artBg" x1="170" y1="170" x2="700" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE9DC"/>
+      <stop offset=".53" stop-color="#C7DBC9"/>
+      <stop offset="1" stop-color="#E9E8D5"/>
+    </linearGradient>
+    <radialGradient id="artLight" cx="0" cy="0" r="1" gradientTransform="matrix(0 285 -300 0 546 310)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFAE2" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FFFAE2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="210" y1="270" x2="490" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF2"/><stop offset=".52" stop-color="#F5EFDC"/><stop offset="1" stop-color="#DCD9C8"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="280" y1="280" x2="411" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A65C37"/><stop offset="1" stop-color="#60341F"/>
+    </linearGradient>
+    <linearGradient id="foam" x1="273" y1="218" x2="426" y2="305" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9E8"/><stop offset="1" stop-color="#E9DAB8"/>
+    </linearGradient>
+    <clipPath id="insideCup"><path d="M215 260c69 22 181 22 250 0l-24 249c-62 37-139 37-201 0l-25-249Z"/></clipPath>
+  </defs>
+  <rect width="1440" height="1080" fill="#F6F7F1"/>
+  <circle cx="70" cy="90" r="390" fill="#D8E77E" opacity=".08"/>
+
+  <rect width="1440" height="82" fill="#FFFEFA"/>
+  <path d="M0 81.5h1440" stroke="#DFE4DC"/>
+  <g>
+    <path d="M121 26h30v33c0 5-4 9-9 9h-12c-5 0-9-4-9-9V26Z" stroke="#174C3D" stroke-width="1.5" transform="rotate(-4 136 47)"/>
+    <circle cx="136" cy="43" r="7" fill="#D8E77E" stroke="#E78060"/>
+    <text x="163" y="52" fill="#19251F" font-family="Georgia,serif" font-size="24" font-weight="700">Brew<tspan fill="#174C3D" font-weight="400">Lite</tspan></text>
+  </g>
+  <text x="638" y="48" fill="#174C3D" font-family="Arial,sans-serif" font-size="13" font-weight="700">Thực đơn</text>
+  <path d="M632 81h66" stroke="#E78060" stroke-width="2"/>
+  <text x="737" y="48" fill="#69756C" font-family="Arial,sans-serif" font-size="13">Câu chuyện</text>
+  <circle cx="1064" cy="42" r="3.5" fill="#E78060"/>
+  <text x="1076" y="46" fill="#515E55" font-family="Arial,sans-serif" font-size="12">TP. Hồ Chí Minh</text>
+  <path d="m1186 40 4 4 4-4" stroke="#515E55" stroke-width="1.3"/>
+  <path d="M1212 30v25" stroke="#DFE4DC"/>
+  <path d="M1225 34h3l2 13h11l3-9h-15" stroke="#174C3D" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1233" cy="51" r="1" fill="#174C3D"/><circle cx="1240" cy="51" r="1" fill="#174C3D"/>
+  <text x="1252" y="45" fill="#174C3D" font-family="Arial,sans-serif" font-size="10">Giỏ hàng</text>
+  <circle cx="1318" cy="42" r="9" fill="#E8EFDF"/>
+  <text x="1315" y="45" fill="#174C3D" font-family="Arial,sans-serif" font-size="8" font-weight="700">0</text>
+
+  <text x="120" y="119" fill="#174C3D" font-family="Arial,sans-serif" font-size="11">← Thực đơn</text>
+  <path d="m203 114 4 4-4 4" stroke="#A8B0A7" stroke-width="1.2"/>
+  <text x="219" y="119" fill="#828A81" font-family="Arial,sans-serif" font-size="11">Cà phê</text>
+  <path d="m264 114 4 4-4 4" stroke="#A8B0A7" stroke-width="1.2"/>
+  <text x="280" y="119" fill="#19251F" font-family="Arial,sans-serif" font-size="11">Cappuccino</text>
+
+  <rect x="120" y="151" width="582" height="650" fill="url(#artBg)"/>
+  <rect x="120" y="151" width="582" height="650" fill="url(#artLight)"/>
+  <circle cx="166" cy="198" r=".5" fill="#fff"/>
+  <text x="151" y="185" fill="#E78060" font-family="Georgia,serif" font-size="14">01</text>
+  <text x="178" y="184" fill="#345746" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.5">PHA CHẬM, UỐNG ÊM</text>
+  <circle cx="671" cy="180" r="22" stroke="#174C3D" stroke-opacity=".45"/>
+  <text x="659" y="184" fill="#345746" font-family="Georgia,serif" font-size="13">BL</text>
+  <text x="659" y="192" fill="#345746" font-family="Arial,sans-serif" font-size="4" letter-spacing=".5">EST. 2024</text>
+  <g transform="translate(155 214) scale(.76)">
+    <circle cx="345" cy="336" r="232" fill="#EAF0D9"/>
+    <circle cx="345" cy="336" r="191" stroke="#A9C0A6" stroke-width="1.5" stroke-dasharray="2 8"/>
+    <path d="M126 460c-38-17-55-48-44-69 8-16 33-14 54 5 20 18 29 42 20 58-5 10-16 12-30 6Z" fill="#708C68"/>
+    <path d="M132 457c-13-19-27-39-41-57m41 57 8-37m-8 37-32-15" stroke="#D5E2C7" stroke-width="3" stroke-linecap="round"/>
+    <path d="M520 202c33-14 63-4 69 15 5 15-13 31-39 35-25 4-48-5-52-20-3-11 5-23 22-30Z" fill="#91A783"/>
+    <path d="m507 241 61-30m-61 30 34-5m-34 5 20-25" stroke="#E1E8D4" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="343" cy="572" rx="176" ry="31" fill="#52705D" opacity=".12"/>
+    <path d="M458 319c39-20 82-8 91 22 10 34-9 77-45 91-25 10-51 1-69-17" stroke="#E9E4D3" stroke-width="32"/>
+    <path d="M458 319c39-20 82-8 91 22 10 34-9 77-45 91-25 10-51 1-69-17" stroke="#C9C9B8" stroke-width="5"/>
+    <path d="M180 563c77 35 251 37 329-1l-7 25c-80 38-235 36-313 1l-9-25Z" fill="#F6F0DF" stroke="#CFCBB9" stroke-width="4"/>
+    <path d="M215 260c69 22 181 22 250 0l-24 249c-62 37-139 37-201 0l-25-249Z" fill="url(#cup)" stroke="#D0CBB8" stroke-width="4"/>
+    <g clip-path="url(#insideCup)">
+      <path d="M207 302c62 21 205 22 266-1l-21 215c-62 37-139 37-201 0l-44-214Z" fill="url(#coffee)"/>
+      <path d="M213 294c74 23 181 23 254-1" stroke="#D99C62" stroke-width="5" opacity=".8"/>
+      <path d="M220 319c14 6 27 11 39 15" stroke="#E8C29A" stroke-width="2" opacity=".42"/>
+    </g>
+    <ellipse cx="340" cy="261" rx="125" ry="31" fill="#D7C9AC"/>
+    <ellipse cx="340" cy="253" rx="122" ry="28" fill="url(#foam)"/>
+    <path d="M340 240c-27 0-42 12-42 23 0 9 12 15 27 15 22 0 36-11 36-22 0-9-8-16-21-16Zm-2 10c8 0 13 4 13 8 0 5-8 10-18 10-8 0-14-3-14-7 0-5 8-11 19-11Z" fill="#B57A4F"/>
+    <path d="M337 238c-14-11-22-19-22-27 0-8 9-13 19-7 7-10 19-8 22 0 11-5 20 1 19 9-1 8-9 15-22 25" fill="#FFF8E9" stroke="#D9CBAF" stroke-width="2"/>
+    <path d="M235 273c7 4 17 7 27 9" stroke="#FFF" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    <path d="M260 535c49 16 111 16 158 0" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+    <path d="M182 180c11-17 22-17 33 0-11 17-22 17-33 0Zm291 325c10-15 20-15 30 0-10 15-20 15-30 0Z" fill="#D78361"/>
+    <circle cx="198" cy="180" r="3" fill="#F8F4E5"/><circle cx="488" cy="505" r="3" fill="#F8F4E5"/>
+  </g>
+  <path d="M151 770h25" stroke="#E78060"/>
+  <text x="185" y="773" fill="#345746" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.1">ESPRESSO · SỮA TƯƠI · BỌT MỊN</text>
+
+  <text x="780" y="169" fill="#174C3D" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.8">CÀ PHÊ PHA MÁY</text>
+  <path d="M780 165h22" stroke="#E78060"/>
+  <text x="780" y="231" fill="#1D2A22" font-family="Georgia,serif" font-size="58">Cappuccino</text>
+  <text x="780" y="261" fill="#67736A" font-family="Arial,sans-serif" font-size="13">Espresso đậm vừa, sữa tươi nóng và lớp bọt mịn</text>
+  <text x="780" y="280" fill="#67736A" font-family="Arial,sans-serif" font-size="13">cân bằng trong từng ngụm.</text>
+  <text x="780" y="314" fill="#737D75" font-family="Arial,sans-serif" font-size="11">Giá từ</text>
+  <text x="821" y="314" fill="#174C3D" font-family="Arial,sans-serif" font-size="13" font-weight="700">45.000đ</text>
+  <circle cx="898" cy="310" r="1.5" fill="#A8B0A7"/>
+  <text x="909" y="314" fill="#737D75" font-family="Arial,sans-serif" font-size="11">Thức uống nóng</text>
+
+  <path d="M780 343h540" stroke="#DFE4DC"/>
+  <text x="780" y="371" fill="#19251F" font-family="Arial,sans-serif" font-size="14" font-weight="700">Kích cỡ</text>
+  <text x="780" y="389" fill="#737D75" font-family="Arial,sans-serif" font-size="10">Chọn dung tích phù hợp</text>
+  <text x="1250" y="373" fill="#BD654E" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1">BẮT BUỘC</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="780" y="405" width="170" height="87" rx="3" fill="#FFFEFA" stroke="#DCE2DA"/>
+    <text x="794" y="431" fill="#19251F" font-family="Georgia,serif" font-size="19">S</text>
+    <text x="883" y="429" fill="#7C867E" font-size="9">250 ml</text>
+    <text x="794" y="475" fill="#526158" font-size="10" font-weight="700">45.000đ</text>
+    <rect x="964" y="405" width="170" height="87" rx="3" fill="#F0F5EC" stroke="#174C3D" stroke-width="1.5"/>
+    <text x="978" y="431" fill="#19251F" font-family="Georgia,serif" font-size="19">M</text>
+    <text x="1067" y="429" fill="#7C867E" font-size="9">350 ml</text>
+    <text x="978" y="475" fill="#174C3D" font-size="10" font-weight="700">51.000đ</text>
+    <rect x="1148" y="405" width="172" height="87" rx="3" fill="#FFFEFA" stroke="#DCE2DA"/>
+    <text x="1162" y="431" fill="#19251F" font-family="Georgia,serif" font-size="19">L</text>
+    <text x="1251" y="429" fill="#7C867E" font-size="9">450 ml</text>
+    <text x="1162" y="475" fill="#526158" font-size="10" font-weight="700">57.000đ</text>
+  </g>
+
+  <path d="M780 518h540" stroke="#DFE4DC"/>
+  <text x="780" y="546" fill="#19251F" font-family="Arial,sans-serif" font-size="14" font-weight="700">Topping</text>
+  <text x="780" y="564" fill="#737D75" font-family="Arial,sans-serif" font-size="10">Thêm một chút vui cho ly cà phê</text>
+  <text x="1248" y="548" fill="#818980" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1">TÙY CHỌN</text>
+  <rect x="780" y="580" width="540" height="57" rx="3" fill="#FFFEFA" stroke="#E0E4DD"/>
+  <rect x="793" y="600" width="17" height="17" rx="2" stroke="#B7C0B7"/>
+  <text x="822" y="604" fill="#19251F" font-family="Arial,sans-serif" font-size="11" font-weight="700">Trân châu trắng</text>
+  <text x="822" y="622" fill="#838B83" font-family="Arial,sans-serif" font-size="9">Dẻo thơm, vui miệng</text>
+  <text x="1264" y="612" fill="#59675D" font-family="Arial,sans-serif" font-size="10">+7.000đ</text>
+  <rect x="780" y="645" width="540" height="57" rx="3" fill="#FFFEFA" stroke="#E0E4DD"/>
+  <rect x="793" y="665" width="17" height="17" rx="2" stroke="#B7C0B7"/>
+  <text x="822" y="669" fill="#19251F" font-family="Arial,sans-serif" font-size="11" font-weight="700">Kem sữa tươi</text>
+  <text x="822" y="687" fill="#838B83" font-family="Arial,sans-serif" font-size="9">Béo nhẹ, phủ mịn</text>
+  <text x="1264" y="677" fill="#59675D" font-family="Arial,sans-serif" font-size="10">+8.000đ</text>
+
+  <path d="M780 725h540" stroke="#DFE4DC"/>
+  <text x="780" y="750" fill="#19251F" font-family="Arial,sans-serif" font-size="13" font-weight="700">Số lượng</text>
+  <text x="780" y="768" fill="#737D75" font-family="Arial,sans-serif" font-size="9">Từ 1 đến 20 ly</text>
+  <rect x="1212" y="737" width="108" height="36" rx="2" fill="#FFFEFA" stroke="#D8DFD6"/>
+  <text x="1224" y="761" fill="#174C3D" font-family="Arial,sans-serif" font-size="17">−</text>
+  <path d="M1250 738v34M1283 738v34" stroke="#DFE4DC"/>
+  <text x="1262" y="760" fill="#19251F" font-family="Arial,sans-serif" font-size="11">1</text>
+  <text x="1295" y="761" fill="#174C3D" font-family="Arial,sans-serif" font-size="17">+</text>
+
+  <path d="M780 791h540M780 857h540" stroke="#AAB6A9"/>
+  <text x="780" y="817" fill="#174C3D" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.3">TỔNG GIÁ</text>
+  <text x="780" y="839" fill="#778178" font-family="Arial,sans-serif" font-size="9">1 ly · đã gồm các tùy chọn</text>
+  <text x="1198" y="836" fill="#174C3D" font-family="Georgia,serif" font-size="27">51.000đ</text>
+  <rect x="780" y="872" width="540" height="49" rx="2" fill="#174C3D"/>
+  <text x="798" y="902" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Thêm vào giỏ</text>
+  <text x="1286" y="904" fill="#D8E77E" font-family="Arial,sans-serif" font-size="18">↗</text>
+  <text x="780" y="941" fill="#7B857C" font-family="Arial,sans-serif" font-size="9">Giá thay đổi theo kích cỡ, topping và số lượng.</text>
+
+  <path d="M120 951h1200" stroke="#DFE4DC"/>
+  <text x="120" y="977" fill="#838B83" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">BREWLITE COFFEE · CHẬM MỘT NHỊP, NGON TRỌN VỊ</text>
+  <text x="1294" y="977" fill="#838B83" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">01 / 05</text>
+</svg>
