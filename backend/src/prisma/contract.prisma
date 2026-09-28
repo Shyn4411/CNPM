@@ -1,0 +1,244 @@
+// use prisma-8
+
+// =====================================================
+// ENUMS
+// =====================================================
+
+enum OrderStatus {
+  PENDING
+  PAID
+  PAYMENT_FAILED
+  PREPARING
+  READY
+  COMPLETED
+  CANCELLED
+
+  @@type("pg/text@1")
+}
+
+enum PaymentMethod {
+  E_WALLET
+  CARD
+
+  @@type("pg/text@1")
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESS
+  FAILED
+
+  @@type("pg/text@1")
+}
+
+// =====================================================
+// USERS
+// =====================================================
+
+model User {
+  id           Int              @id @default(autoincrement())
+  email        VarChar(255)     @unique
+  passwordHash VarChar(255)
+  fullName     VarChar(100)
+  orders       Order[]
+  createdAt    TimestamptzString @default(now())
+  updatedAt    temporal.updatedAtString()
+
+  @@map("users")
+}
+
+// =====================================================
+// PRODUCTS
+// =====================================================
+
+model Product {
+  id             Int              @id @default(autoincrement())
+  name           VarChar(150)
+  description    String?
+  basePrice      Numeric(12, 2)
+  imageUrl       VarChar(500)?
+  isActive       Boolean          @default(true)
+  sizes          ProductSize[]
+  productToppings ProductTopping[]
+  orderItems     OrderItem[]
+  createdAt      TimestamptzString @default(now())
+  updatedAt      temporal.updatedAtString()
+
+  @@map("products")
+  @@index([isActive])
+}
+
+// =====================================================
+// PRODUCT SIZES
+// =====================================================
+
+model ProductSize {
+  id          Int              @id @default(autoincrement())
+  productId   Int
+  size        VarChar(10)
+  extraPrice  Numeric(12, 2)   
+  product     Product          @relation(
+    fields: [productId],
+    references: [id],
+    onDelete: Cascade
+  )
+
+  @@unique([productId, size])
+  @@index([productId])
+  @@map("product_sizes")
+}
+
+// =====================================================
+// TOPPINGS
+// =====================================================
+
+model Topping {
+  id               Int              @id @default(autoincrement())
+  name             VarChar(100)     @unique
+  price            Numeric(12, 2)
+  isActive         Boolean          @default(true)
+  productToppings  ProductTopping[]
+  orderItemToppings OrderItemTopping[]
+  createdAt        TimestamptzString @default(now())
+  updatedAt        temporal.updatedAtString()
+
+  @@map("toppings")
+  @@index([isActive])
+}
+
+// =====================================================
+// PRODUCT TOPPINGS
+// =====================================================
+
+model ProductTopping {
+  productId  Int
+  toppingId  Int
+  product    Product  @relation(
+    fields: [productId],
+    references: [id],
+    onDelete: Cascade
+  )
+  topping    Topping  @relation(
+    fields: [toppingId],
+    references: [id],
+    onDelete: Cascade
+  )
+
+  @@id([productId, toppingId])
+  @@index([toppingId])
+  @@map("product_toppings")
+}
+
+// =====================================================
+// ORDERS
+// =====================================================
+
+model Order {
+  id              Int              @id @default(autoincrement())
+  orderCode       VarChar(50)      @unique
+  userId          Int
+  status          OrderStatus      @default(PENDING)
+  subtotal        Numeric(12, 2)
+  discountAmount Numeric(12, 2)    
+  totalAmount     Numeric(12, 2)
+  note            VarChar(500)?
+  user            User             @relation(
+    fields: [userId],
+    references: [id],
+    onDelete: Restrict
+  )
+  items           OrderItem[]
+  payments        Payment[]
+  createdAt       TimestamptzString @default(now())
+  updatedAt       temporal.updatedAtString()
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("orders")
+}
+
+// =====================================================
+// ORDER ITEMS
+// =====================================================
+
+model OrderItem {
+  id               Int              @id @default(autoincrement())
+  orderId          Int
+  productId        Int
+  productName      VarChar(150)
+  size             VarChar(10)
+  basePrice        Numeric(12, 2)
+  sizeExtraPrice   Numeric(12, 2)     
+  unitPrice        Numeric(12, 2)
+  quantity         Int
+  subtotal         Numeric(12, 2)
+  order            Order            @relation(
+    fields: [orderId],
+    references: [id],
+    onDelete: Cascade
+  )
+  product          Product          @relation(
+    fields: [productId],
+    references: [id],
+    onDelete: Restrict
+  )
+  toppings         OrderItemTopping[]
+  createdAt        TimestamptzString @default(now())
+
+  @@index([orderId])
+  @@index([productId])
+  @@map("order_items")
+}
+
+// =====================================================
+// ORDER ITEM TOPPINGS
+// =====================================================
+
+model OrderItemTopping {
+  id             Int              @id @default(autoincrement())
+  orderItemId    Int
+  toppingId      Int
+  toppingName    VarChar(100)
+  toppingPrice   Numeric(12, 2)
+  orderItem      OrderItem        @relation(
+    fields: [orderItemId],
+    references: [id],
+    onDelete: Cascade
+  )
+  topping        Topping          @relation(
+    fields: [toppingId],
+    references: [id],
+    onDelete: Restrict
+  )
+
+  @@unique([orderItemId, toppingId])
+  @@index([toppingId])
+  @@map("order_item_toppings")
+}
+
+// =====================================================
+// PAYMENTS
+// =====================================================
+
+model Payment {
+  id                Int              @id @default(autoincrement())
+  orderId           Int
+  method            PaymentMethod
+  status            PaymentStatus    @default(PENDING)
+  amount            Numeric(12, 2)
+  transactionCode   VarChar(100)?    @unique
+  failureReason     VarChar(500)?
+  paidAt            TimestamptzString?
+  order             Order            @relation(
+    fields: [orderId],
+    references: [id],
+    onDelete: Cascade
+  )
+  createdAt         TimestamptzString @default(now())
+  updatedAt         temporal.updatedAtString()
+
+  @@index([orderId])
+  @@index([status])
+  @@map("payments")
+}

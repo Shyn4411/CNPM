@@ -10,25 +10,25 @@ Project được xây dựng theo kiến trúc Frontend – Backend – Database
 
 ## 1. Thông tin dự án
 
-| Thành phần | Công nghệ |
-|---|---|
-| Frontend | Next.js |
-| Backend | NestJS |
-| Ngôn ngữ | TypeScript |
-| Database | PostgreSQL |
-| ORM | Prisma / TypeORM |
-| API | REST API |
-| Styling | Tailwind CSS |
-| Authentication | JWT |
-| Package Manager | npm |
-| Version Control | Git / GitHub |
+| Thành phần      | Công nghệ        |
+| --------------- | ---------------- |
+| Frontend        | Next.js          |
+| Backend         | NestJS           |
+| Ngôn ngữ        | TypeScript       |
+| Database        | PostgreSQL       |
+| ORM             | Prisma           |
+| API             | REST API         |
+| Styling         | Tailwind CSS     |
+| Authentication  | JWT              |
+| Package Manager | npm              |
+| Version Control | Git / GitHub     |
 
 ### Port cấu hình
 
-| Service | Port | URL |
-|---|---:|---|
+| Service            | Port | URL                   |
+| ------------------ | ---: | --------------------- |
 | Frontend – Next.js | 3000 | http://localhost:3000 |
-| Backend – NestJS | 3001 | http://localhost:3001 |
+| Backend – NestJS   | 3001 | http://localhost:3001 |
 
 ---
 
@@ -115,9 +115,9 @@ BrewLite sử dụng kiến trúc phân tầng Frontend – Backend – Database
 └──────────────────────────────┘
 ```
 
-* **Frontend:** Chịu trách nhiệm giao diện và tương tác với người dùng.
-* **Backend:** Chịu trách nhiệm xử lý API, business logic, authentication và giao tiếp với database.
-* **Database:** Chịu trách nhiệm lưu trữ và quản lý tính toàn vẹn dữ liệu của hệ thống.
+- **Frontend:** Chịu trách nhiệm giao diện và tương tác với người dùng.
+- **Backend:** Chịu trách nhiệm xử lý API, business logic, authentication và giao tiếp với database.
+- **Database:** Chịu trách nhiệm lưu trữ và quản lý tính toàn vẹn dữ liệu của hệ thống.
 
 ---
 
@@ -161,10 +161,10 @@ CNPM/
 
 Để chạy project cần cài đặt sẵn:
 
-* Node.js (khuyến nghị phiên bản LTS mới nhất)
-* npm
-* Git
-* PostgreSQL
+- Node.js (khuyến nghị phiên bản LTS mới nhất)
+- npm
+- Git
+- PostgreSQL
 
 Kiểm tra phiên bản các công cụ:
 
@@ -195,7 +195,7 @@ Tạo file `.env` dựa trên `.env.example`:
 cp .env.example .env
 ```
 
-*(Trên Windows có thể copy và đổi tên thủ công trong thư mục dự án)*
+_(Trên Windows có thể copy và đổi tên thủ công trong thư mục dự án)_
 
 Nội dung mẫu file `.env.example`:
 
@@ -247,17 +247,21 @@ Frontend chạy tại: [http://localhost:3000](http://localhost:3000)
 Cần mở hai cửa sổ terminal riêng biệt:
 
 ### Terminal 1 – Backend
+
 ```bash
 cd D:\VSC\CNPM\backend
 npm run start:dev
 ```
+
 URL: [http://localhost:3001](http://localhost:3001)
 
 ### Terminal 2 – Frontend
+
 ```bash
 cd D:\VSC\CNPM\frontend
 npm run dev
 ```
+
 URL: [http://localhost:3000](http://localhost:3000)
 
 ---
@@ -266,91 +270,85 @@ URL: [http://localhost:3000](http://localhost:3000)
 
 Frontend giao tiếp với Backend thông qua REST API (Base URL: `http://localhost:3001`).
 
-| Method | Endpoint | Chức năng |
-|---|---|---|
-| `GET` | `/products` | Lấy danh sách sản phẩm |
-| `GET` | `/products/:id` | Lấy chi tiết sản phẩm |
-| `POST` | `/orders` | Tạo đơn hàng |
-| `POST` | `/auth/register` | Đăng ký tài khoản |
-| `POST` | `/auth/login` | Đăng nhập tài khoản |
-| `POST` | `/payments` | Thanh toán đơn hàng |
-| `GET` | `/orders/history` | Xem lịch sử đơn hàng |
+| Method | Endpoint          | Chức năng              |
+| ------ | ----------------- | ---------------------- |
+| `GET`  | `/products`       | Lấy danh sách sản phẩm |
+| `GET`  | `/products/:id`   | Lấy chi tiết sản phẩm  |
+| `POST` | `/orders`         | Tạo đơn hàng           |
+| `POST` | `/auth/register`  | Đăng ký tài khoản      |
+| `POST` | `/auth/login`     | Đăng nhập tài khoản    |
+| `POST` | `/payments`       | Thanh toán đơn hàng    |
+| `GET`  | `/orders/history` | Xem lịch sử đơn hàng   |
 
-*Các endpoint sẽ được hoàn thiện theo tiến độ từng task.*
+_Các endpoint sẽ được hoàn thiện theo tiến độ từng task._
 
 ---
 
 ## 13. Các màn hình chính
 
 ### 13.1. Menu
-* Hiển thị danh sách sản phẩm theo danh mục.
-* Hiển thị hình ảnh, tên sản phẩm, giá gốc và mô tả cơ bản.
+
+- Hiển thị danh sách sản phẩm theo danh mục.
+- Hiển thị hình ảnh, tên sản phẩm, giá gốc và mô tả cơ bản.
 
 ### 13.2. Product Detail
-* Xem thông tin chi tiết và thành phần món.
-* Chọn size (S / M / L).
-* Chọn topping đi kèm.
-* Cập nhật giá theo tùy chọn theo thời gian thực.
-* Thêm sản phẩm vào giỏ hàng.
+
+- Xem thông tin chi tiết và thành phần món.
+- Chọn size (S / M / L).
+- Chọn topping đi kèm.
+- Cập nhật giá theo tùy chọn theo thời gian thực.
+- Thêm sản phẩm vào giỏ hàng.
 
 ### 13.3. Cart
-* Quản lý các món đã chọn trong giỏ.
-* Tăng/giảm số lượng hoặc xóa sản phẩm.
-* Xem tổng tiền tạm tính.
+
+- Quản lý các món đã chọn trong giỏ.
+- Tăng/giảm số lượng hoặc xóa sản phẩm.
+- Xem tổng tiền tạm tính.
 
 ### 13.4. Payment
-* Xác nhận lại danh sách món và địa chỉ/bàn nhận.
-* Chọn phương thức thanh toán không tiền mặt.
-* Thực hiện gửi yêu cầu thanh toán.
+
+- Xác nhận lại danh sách món và địa chỉ/bàn nhận.
+- Chọn phương thức thanh toán không tiền mặt.
+- Thực hiện gửi yêu cầu thanh toán.
 
 ### 13.5. Confirmation
-* Hiển thị trạng thái đơn hàng (Thành công / Chờ xử lý).
-* Cung cấp mã đơn hàng (Order ID) để nhận món.
-* Nút điều hướng xem lịch sử đơn hàng.
+
+- Hiển thị trạng thái đơn hàng (Thành công / Chờ xử lý).
+- Cung cấp mã đơn hàng (Order ID) để nhận món.
+- Nút điều hướng xem lịch sử đơn hàng.
 
 ---
 
 ## 14. Tiến độ phát triển (Scrum Tasks)
 
-| Task | Nội dung | Trạng thái |
-|---|---|:---:|
-| **Task 1** | Khởi tạo project và cấu trúc thư mục | 🔄 Đang thực hiện |
-| **Task 2** | Xây dựng API `GET /products` | ⏳ Chưa thực hiện |
-| **Task 3** | Frontend gọi API và hiển thị Menu | ⏳ Chưa thực hiện |
-| **Task 4** | Màn hình Product Detail & Tùy chỉnh | ⏳ Chưa thực hiện |
-| **Task 5** | Quản lý Giỏ hàng (Cart) | ⏳ Chưa thực hiện |
-| **Task 6** | API tạo đơn hàng `POST /orders` | ⏳ Chưa thực hiện |
-| **Task 7** | Xác thực người dùng qua JWT (Auth) | ⏳ Chưa thực hiện |
-| **Task 8** | Tích hợp Mock Payment | ⏳ Chưa thực hiện |
-| **Task 9** | Màn hình Confirmation & Order History | ⏳ Chưa thực hiện |
+| Task        | Nội dung                              |    Trạng thái     |
+| ----------- | ------------------------------------- | :---------------: |
+| **Task 1**  | Khởi tạo project và cấu trúc thư mục  | 🔄 Đang thực hiện |
+| **Task 2**  | Xây dựng API `GET /products`          | ⏳ Chưa thực hiện |
+| **Task 3**  | Frontend gọi API và hiển thị Menu     | ⏳ Chưa thực hiện |
+| **Task 4**  | Màn hình Product Detail & Tùy chỉnh   | ⏳ Chưa thực hiện |
+| **Task 5**  | Quản lý Giỏ hàng (Cart)               | ⏳ Chưa thực hiện |
+| **Task 6**  | API tạo đơn hàng `POST /orders`       | ⏳ Chưa thực hiện |
+| **Task 7**  | Xác thực người dùng qua JWT (Auth)    | ⏳ Chưa thực hiện |
+| **Task 8**  | Tích hợp Mock Payment                 | ⏳ Chưa thực hiện |
+| **Task 9**  | Màn hình Confirmation & Order History | ⏳ Chưa thực hiện |
 | **Task 10** | Tối ưu hóa backend & bảo mật nâng cao | ⏳ Chưa thực hiện |
 
 ---
 
-## 15. Chi tiết Task 1 – Project Initialization
+## 15. Công nghệ sử dụng
 
-Task 1 tập trung vào nền tảng hệ thống:
-* [x] Khởi tạo Next.js frontend (TypeScript + Tailwind CSS)
-* [x] Khởi tạo NestJS backend (TypeScript)
-* [x] Thiết lập cấu trúc monorepo/multi-package chuẩn
-* [x] Thiết lập Git, `.gitignore`, `.env.example`
-* [x] Xây dựng tài liệu `README.md`
-* [ ] Kiểm tra khả năng chạy song song cổng `3000` và `3001`
+- **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS
+- **Backend:** NestJS, TypeScript, RESTful API, JWT
+- **Database & ORM:** PostgreSQL, Prisma / TypeORM
+- **Tools:** Visual Studio Code, Git, GitHub, npm
 
 ---
 
-## 16. Công nghệ sử dụng
-
-* **Frontend:** Next.js (App Router), React, TypeScript, Tailwind CSS
-* **Backend:** NestJS, TypeScript, RESTful API, JWT
-* **Database & ORM:** PostgreSQL, Prisma / TypeORM
-* **Tools:** Visual Studio Code, Git, GitHub, npm
-
----
-
-## 17. Git Workflow & Quy tắc Commit
+## 16. Git Workflow & Quy tắc Commit
 
 ### Workflow cơ bản
+
 ```bash
 git status
 git add .
@@ -359,14 +357,15 @@ git push
 ```
 
 ### Quy ước Commit (Conventional Commits)
-* `feat:` Bổ sung tính năng mới (ví dụ: `feat: add product API`)
-* `fix:` Sửa lỗi (ví dụ: `fix: fix product price calculation`)
-* `docs:` Cập nhật tài liệu (ví dụ: `docs: update README`)
-* `chore:` Cấu hình linh tinh, package, build (ví dụ: `chore: initialize project`)
+
+- `feat:` Bổ sung tính năng mới (ví dụ: `feat: add product API`)
+- `fix:` Sửa lỗi (ví dụ: `fix: fix product price calculation`)
+- `docs:` Cập nhật tài liệu (ví dụ: `docs: update README`)
+- `chore:` Cấu hình linh tinh, package, build (ví dụ: `chore: initialize project`)
 
 ---
 
-## 18. Development Roadmap
+## 17. Development Roadmap
 
 ```text
 Task 1: Project Initialization
@@ -392,24 +391,26 @@ Task 10: Backend Advanced Features
 
 ---
 
-## 19. Mục tiêu MVP & Hướng mở rộng
+## 18. Mục tiêu MVP & Hướng mở rộng
 
 ### Mục tiêu MVP
+
 Hoàn thiện toàn bộ luồng người dùng: **Xem Menu → Chi tiết & Custom → Giỏ hàng → Đăng nhập → Thanh toán → Nhận mã xác nhận**.
 
 ### Hướng phát triển tiếp theo
-* Quản lý trạng thái đơn hàng theo thời gian thực (WebSockets).
-* Đảm bảo Idempotency trong thanh toán trực tuyến.
-* Quản lý tồn kho đồng thời (Concurrency control).
-* Hệ thống mã giảm giá & tích điểm thành viên (Loyalty program).
-* Phân quyền Quản trị viên (Admin Dashboard: quản lý món, doanh thu, thống kê).
+
+- Quản lý trạng thái đơn hàng theo thời gian thực (WebSockets).
+- Đảm bảo Idempotency trong thanh toán trực tuyến.
+- Quản lý tồn kho đồng thời (Concurrency control).
+- Hệ thống mã giảm giá & tích điểm thành viên (Loyalty program).
+- Phân quyền Quản trị viên (Admin Dashboard: quản lý món, doanh thu, thống kê).
 
 ---
 
-## 20. Bản quyền & Thông tin môn học
+## 19. Bản quyền & Thông tin môn học
 
 Đồ án được thực hiện phục vụ mục đích học tập trong môn **Công nghệ Phần mềm – Đại học Sài Gòn**.
 
-* **Project:** BrewLite – Cashless Coffee Ordering System
-* **Frontend:** Next.js (`http://localhost:3000`)
-* **Backend:** NestJS (`http://localhost:3001`)
+- **Project:** BrewLite – Cashless Coffee Ordering System
+- **Frontend:** Next.js (`http://localhost:3000`)
+- **Backend:** NestJS (`http://localhost:3001`)

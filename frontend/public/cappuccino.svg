@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 700" fill="none">
+  <defs>
+    <linearGradient id="cup" x1="210" y1="270" x2="490" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFDF2"/>
+      <stop offset=".52" stop-color="#F5EFDC"/>
+      <stop offset="1" stop-color="#DCD9C8"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="280" y1="280" x2="411" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A65C37"/>
+      <stop offset="1" stop-color="#60341F"/>
+    </linearGradient>
+    <linearGradient id="foam" x1="273" y1="218" x2="426" y2="305" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9E8"/>
+      <stop offset="1" stop-color="#E9DAB8"/>
+    </linearGradient>
+    <clipPath id="insideCup">
+      <path d="M215 260c69 22 181 22 250 0l-24 249c-62 37-139 37-201 0l-25-249Z"/>
+    </clipPath>
+  </defs>
+  <circle cx="345" cy="336" r="232" fill="#EAF0D9"/>
+  <circle cx="345" cy="336" r="191" stroke="#A9C0A6" stroke-width="1.5" stroke-dasharray="2 8"/>
+  <path d="M126 460c-38-17-55-48-44-69 8-16 33-14 54 5 20 18 29 42 20 58-5 10-16 12-30 6Z" fill="#708C68"/>
+  <path d="M132 457c-13-19-27-39-41-57m41 57 8-37m-8 37-32-15" stroke="#D5E2C7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M520 202c33-14 63-4 69 15 5 15-13 31-39 35-25 4-48-5-52-20-3-11 5-23 22-30Z" fill="#91A783"/>
+  <path d="m507 241 61-30m-61 30 34-5m-34 5 20-25" stroke="#E1E8D4" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="343" cy="572" rx="176" ry="31" fill="#52705D" opacity=".12"/>
+  <path d="M458 319c39-20 82-8 91 22 10 34-9 77-45 91-25 10-51 1-69-17" stroke="#E9E4D3" stroke-width="32"/>
+  <path d="M458 319c39-20 82-8 91 22 10 34-9 77-45 91-25 10-51 1-69-17" stroke="#C9C9B8" stroke-width="5"/>
+  <path d="M180 563c77 35 251 37 329-1l-7 25c-80 38-235 36-313 1l-9-25Z" fill="#F6F0DF" stroke="#CFCBB9" stroke-width="4"/>
+  <path d="M215 260c69 22 181 22 250 0l-24 249c-62 37-139 37-201 0l-25-249Z" fill="url(#cup)" stroke="#D0CBB8" stroke-width="4"/>
+  <g clip-path="url(#insideCup)">
+    <path d="M207 302c62 21 205 22 266-1l-21 215c-62 37-139 37-201 0l-44-214Z" fill="url(#coffee)"/>
+    <path d="M213 294c74 23 181 23 254-1" stroke="#D99C62" stroke-width="5" opacity=".8"/>
+    <path d="M220 319c14 6 27 11 39 15" stroke="#E8C29A" stroke-width="2" opacity=".42"/>
+  </g>
+  <ellipse cx="340" cy="261" rx="125" ry="31" fill="#D7C9AC"/>
+  <ellipse cx="340" cy="253" rx="122" ry="28" fill="url(#foam)"/>
+  <path d="M340 240c-27 0-42 12-42 23 0 9 12 15 27 15 22 0 36-11 36-22 0-9-8-16-21-16Zm-2 10c8 0 13 4 13 8 0 5-8 10-18 10-8 0-14-3-14-7 0-5 8-11 19-11Z" fill="#B57A4F" opacity=".92"/>
+  <path d="M337 238c-14-11-22-19-22-27 0-8 9-13 19-7 7-10 19-8 22 0 11-5 20 1 19 9-1 8-9 15-22 25" fill="#FFF8E9"/>
+  <path d="M337 238c-14-11-22-19-22-27 0-8 9-13 19-7 7-10 19-8 22 0 11-5 20 1 19 9-1 8-9 15-22 25" stroke="#D9CBAF" stroke-width="2"/>
+  <path d="M235 273c7 4 17 7 27 9" stroke="#FFF" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M260 535c49 16 111 16 158 0" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+  <path d="M182 180c11-17 22-17 33 0-11 17-22 17-33 0Zm291 325c10-15 20-15 30 0-10 15-20 15-30 0Z" fill="#D78361"/>
+  <circle cx="198" cy="180" r="3" fill="#F8F4E5"/>
+  <circle cx="488" cy="505" r="3" fill="#F8F4E5"/>
+</svg>
